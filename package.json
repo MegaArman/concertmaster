@@ -1,0 +1,32 @@
+{
+  "name": "concertmaster",
+  "version": "0.0.0",
+  "description": "A simple module to help convert musically relevant information",
+  "main": "./lib/Concertmaster.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint --cache ./lib/*.js tests/*.js",
+    "test": "npm run lint && nyc tape tests/*.js | tap-nyc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MegaArman/concertmaster"
+  },
+  "keywords": [
+    "music informatics",
+    "music"
+  ],
+  "author": "Arman Bahraini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MegaArman/concertmaster/issues"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "nyc": "^11.2.1",
+    "tap-nyc": "^1.0.3",
+    "tape": "^4.8.0"
+  } 
+}
