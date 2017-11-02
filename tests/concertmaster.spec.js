@@ -2,7 +2,7 @@
 const test = require("tape").test;
 const cm = require("../lib/Concertmaster");
 
-test("Concertmaster test", (t) =>
+test("noteToMidi", (t) =>
 {
   t.deepEqual(cm.noteToMidi("C0"), 0, "min");
   t.deepEqual(cm.noteToMidi("B#9"), 120, "max");
@@ -12,4 +12,8 @@ test("Concertmaster test", (t) =>
   t.end();
 });
 
-
+test("fifthsToKey", (t) =>
+{
+  t.deepEqual(cm.fifthsToKey("-6"), "Gb", "-6");
+  t.end();
+});
