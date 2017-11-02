@@ -1,5 +1,5 @@
 # concertmaster
-This simple module aims to make conversions in music informatics easier. It is helpful for MusicXML processing.
+This simple module aims to make conversions in music informatics easier. It is helpful for MusicXML processing. More functionality to come soon...
 
 ## Installation
 ```
