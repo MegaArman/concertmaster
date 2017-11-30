@@ -1,6 +1,6 @@
 {
   "name": "concertmaster",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A simple module to help convert musically relevant information",
   "main": "./lib/Concertmaster.js",
   "files": [
@@ -30,5 +30,5 @@
     "nyc": "^11.2.1",
     "tap-nyc": "^1.0.3",
     "tape": "^4.8.0"
-  } 
+  }
 }
