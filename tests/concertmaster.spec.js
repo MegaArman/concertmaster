@@ -5,7 +5,7 @@ const cm = require("../lib/Concertmaster");
 test("noteStringToMidiNum", (t) =>
 {
   t.deepEqual(cm.noteStringToMidiNum("C0"), 0, "min");
-  t.deepEqual(cm.noteStringToMidiNum("B#9"), 120, "max");
+  t.deepEqual(cm.noteStringToMidiNum("B9"), 119, "max");
   t.deepEqual(cm.noteStringToMidiNum("G#5"), 68, "sharp");
   t.deepEqual(cm.noteStringToMidiNum("Gb5"), 66, "flat");
   t.deepEqual(cm.noteStringToMidiNum("Cb0"), false, "too low");
