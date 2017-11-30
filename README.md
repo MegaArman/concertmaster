@@ -14,12 +14,20 @@ console.log(cm.noteToMidi("G#5")); //=> 68
 ```
 
 Currently supports the following functions:
-### noteToMidi(noteString)
+### noteStringToMidiNum(noteString)
 takes a note string and converts it to a midi #
 
 Ex:
 ```javascript
-cm.noteToMidi("G#5"); //=> 68
+cm.noteStringToMidiNum("G#5"); //=> 68
+```
+
+### midiNumToNoteString(midiNum)
+takes a midi # and converts to a note string
+
+Ex:
+```javascript
+cm.midiNumToNoteString(68); //=> G#5
 ```
 
 ### fifthsToKey(fifths)
@@ -33,4 +41,4 @@ cm.fifthsToKey(-6); //=> "Gb"
 ```
 
 
- #### More functionality to come soon...
+ ### More functionality to come soon...
