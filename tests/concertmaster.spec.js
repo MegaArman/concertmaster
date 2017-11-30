@@ -21,8 +21,14 @@ test("midiNumToNoteString", (t) =>
   t.end();
 });
 
-test("fifthsToKey", (t) =>
+test("keyToNumSharpsFlats", (t) =>
 {
-  t.deepEqual(cm.fifthsToKey("-6"), "Gb", "-6");
+  t.deepEqual(cm.keyToNumSharpsFlats("Gb"), -6, "Gb");
+  t.end();
+});
+
+test("numSharpsFlatsToKey", (t) =>
+{
+  t.deepEqual(cm.numSharpsFlatsToKey(-6), "Gb", "Gb");
   t.end();
 });
