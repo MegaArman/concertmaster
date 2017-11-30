@@ -30,15 +30,21 @@ Ex:
 cm.midiNumToNoteString(68); //=> G#5
 ```
 
-### fifthsToKey(fifths)
-takes a number representing the fifths of a key and converts it to a string representing the key. Negative #s mean flats and positive numbers mean sharps as is in accordance with MusicXML
+### keyToNumSharpsFlats(key)
+takes a key and converts it to a number between -6 and 6.  Negative numbers represent flats and positive numbers represent sharps as is in accordance with MusicXML
 
 Ex:
-
-
 ```javascript
-cm.fifthsToKey(-6); //=> "Gb"
+cm.keyToNumSharpsFlats("Gb"); //=> -6
 ```
 
+### numSharpsFlatsToKey(numSharpsFlats)
+takes a number between -6 and 6 and converts it to a key. Negative numbers represent flats and positive numbers represent sharps as is in accordance with MusicXML
 
- ### More functionality to come soon...
+Ex:
+```javascript
+cm.numSharpsFlatsToKey(-6); //=> Gb
+```
+
+### More functionality to come soon...
+...
